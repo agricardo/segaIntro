@@ -1,0 +1,111 @@
+.sonic {
+    background: url(img/sonic_sprites.png) 0 0 no-repeat;
+    position: absolute;
+    margin: auto;
+    width: 44px;
+    height: 50px;
+    animation: stand 2s steps(15) 1,
+     runing 2s steps(14) 3 2s,
+      runing-fast 1s steps(14) 10 4s,
+       movement-row 1s linear 9 5s,
+       jump 9s linear 1  6s,
+       stand-end 2s steps(15) infinite 13.5s;
+}
+
+@keyframes stand {
+    0% {
+        background-position: 0 -30px;
+    }
+    100% {
+        background-position: -689px -30px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: 25%;
+    }
+    25.0001% {
+        top: 25.0001%;
+    }
+    50% {
+        top: 50%;
+    }
+    51.0001% {
+        top: 51.0001%;
+    }
+    75% {
+        top: 75%;
+    }
+    75.0001% {
+        top: 75.0001%;
+    }
+    90% {
+        top: 90%;
+    }
+}
+
+@keyframes runing {
+    0% {
+        background-position: 0 -160px;
+    }
+    100% {
+        background-position: -689px -160px;
+    }
+}
+
+@keyframes runing-fast {
+    0% {
+        background-position: 0 -221px;
+    }
+    100% {
+        background-position: -689px -221px;
+    }
+}
+
+@keyframes movement-row {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes stand-end {
+    0% {
+        background-position: 0 -30px;
+        top: 84%;
+        left: 50%;
+
+    }
+    100% {
+        background-position: -689px -30px;
+        top: 84%;
+        left: 50%;
+        width: 50px;
+    }
+}
+
+.sega {
+    background: url(img/sega.jpg) 0 0 no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    
+    z-index: -1;
+    position: absolute;
+    animation: apear 21s linear 1;
+}
+
+@keyframes apear {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 720px;
+    }
+}
